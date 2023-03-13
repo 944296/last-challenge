@@ -1,0 +1,42 @@
+.nav {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    background-color: #FFACAC;
+    padding: 20px 50px;
+}
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_link {
+    position: relative;
+}
+@keyframes notificationAnimation {
+    0% {
+      transform: none;
+    }
+    50% {
+      transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+      transform: none;
+    }
+}
+.nav__notification {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    animation: notificationAnimation 2s ease-in-out infinite;
+}
+.nav_dot {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+}
